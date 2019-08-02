@@ -51,29 +51,29 @@ while True:
     if time.time() > future:##after 20second music will play
         try:
             cv2.destroyAllWindows()
-            mp = 'C:/Program Files (x86)/Windows Media Player/wmplayer.exe'
+            mp = 'path for wmplayer.exe'
             if text == 'Angry':
-                randomfile = random.choice(os.listdir("F:/Music_player_with_Emotions_recognition/songs/angry/"))
+                randomfile = random.choice(os.listdir("path for/songs/angry/"))
                 print('You are angry !!!! please calm down:) ,I will play song for you :' + randomfile)
-                file = ('F:/Music_player_with_Emotions_recognition/songs/angry/' + randomfile)
+                file = ('path for/songs/angry/' + randomfile)
                 subprocess.call([mp, file])
 
             if text == 'Smile':
-                randomfile = random.choice(os.listdir("F:/Music_player_with_Emotions_recognition/songs/happy/"))
+                randomfile = random.choice(os.listdir("path/songs/happy/"))
                 print('You are smiling :) ,I playing special song for you: ' + randomfile)
-                file = ('F:/Music_player_with_Emotions_recognition/songs/happy/' + randomfile)
+                file = ('your path/songs/happy/' + randomfile)
                 subprocess.call([mp, file])
 
             if text == 'Fear':
-                randomfile = random.choice(os.listdir("F:/Music_player_with_Emotions_recognition/songs/fear/"))
+                randomfile = random.choice(os.listdir("path/songs/fear/"))
                 print('You have fear of something ,I playing song for you: ' + randomfile)
-                file = ('F:/Music_player_with_Emotions_recognition/songs/fear/' + randomfile)
+                file = ('path/songs/fear/' + randomfile)
                 subprocess.call([mp, file])
 
             if text == 'Sad':
-                randomfile = random.choice(os.listdir("F:/Music_player_with_Emotions_recognition/songs/sad/"))
+                randomfile = random.choice(os.listdir("path/songs/sad/"))
                 print('You are sad,dont worry:) ,I playing song for you: ' + randomfile)
-                file = ('F:/Music_player_with_Emotions_recognition/songs/sad/' + randomfile)
+                file = ('path/songs/sad/' + randomfile)
                 subprocess.call([mp, file])
             break
 
